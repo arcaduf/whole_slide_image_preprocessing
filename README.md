@@ -131,7 +131,7 @@ python draw_thumbnail_tiles.py \
 <br>
 
 ### Run an end-to-end test
-To run this end-to-end test, download the file `normal_080.tif` from the Camelyon-16 datasets available here [Camelyon-16](https://camelyon16.grand-challenge.org/) and place it inside `test_data/`:
+To run this end-to-end test, download the file `normal_080.tif` from the Camelyon-16 datasets available [here](https://camelyon16.grand-challenge.org/) and place it inside `test_data/`:
 1. Convert the XML annotation file to a mask:
 ```
 python from_xml_to_mask.py -input test_data/master_index.csv -col-wsi filepath_wsi -col-ann filepath_xml -output test_output/from_xml_to_mask/
