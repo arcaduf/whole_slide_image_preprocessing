@@ -56,7 +56,11 @@ the thumbnails of the original WSIs extracted at magnification M, `wsi_overlays/
 the thumbnails overlaid to the tissue masks and that can be used to check the quality of
 results at visual inspection. 
 
-![](imgs/wsi_snapshot.png) | ![](imgs/foreground_mask_mag1.0.png)
+![Input WSI](imgs/wsi_snapshot.png) | ![Manual Annotation](imgs/wsi_annotation_snapshot.png)
+
+<br>
+
+![Annotation mask](imgs/wsi_annotation_mask.png)
 
 <br>
 
@@ -71,7 +75,7 @@ python merge_foreground_and_annotations.py \
 This tool creates in the output folder a CSV master index and 1 sub-folder named `wsi_merged_foreground_and_annotations/`, 
 containing the merged masks. 
 
-![](imgs/merged_foreground_mask_mag1.0.png)
+![Merged annotation and foreground mask](imgs/merged_foreground_mask_mag1.0.png)
 
 <br>
 
@@ -86,7 +90,7 @@ python raster_mask.py \
 This tool creates in the output folder a CSV master index and 1 sub-folder named `wsi_overlays/`, 
 containing the rasterized masks. 
 
-![](imgs/rasterized_mask_mag1.0.png)
+![Target area split in rectangles to split up the tile generation](imgs/rasterized_mask_mag1.0.png)
 
 <br>
 
@@ -122,7 +126,7 @@ python draw_thumbnail_tiles.py \
     -mag-draw < select the magnification at which to extract the thumbnail for drawing >
 ```
 
-![](imgs/annotation_screenshot.png) | ![](imgs/thumbnail_with_tiles.png)
+![Input WSI](imgs/annotation_screenshot.png) | ![WSI overlaid with (some) extracted tiles](imgs/thumbnail_with_tiles.png)
 
 <br>
 
