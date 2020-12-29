@@ -35,7 +35,11 @@ This tool creates in the output folder a CSV master index and 2 sub-folders name
 containing the masks extracted from XML annotations, `label_conversion/`, containing
 the JSON to convert the values in the annotation masks into the original string labels. 
 
-![](imgs/wsi_snapshot.png) | ![](imgs/wsi_annotation_snapshot.png)
+![](imgs/wsi_snapshot.png) ![](imgs/wsi_annotation_snapshot.png)
+
+<br>
+
+![](imgs/wsi_annotation_mask.png)
 
 <br>
 
@@ -56,11 +60,7 @@ the thumbnails of the original WSIs extracted at magnification M, `wsi_overlays/
 the thumbnails overlaid to the tissue masks and that can be used to check the quality of
 results at visual inspection. 
 
-![Input WSI](imgs/wsi_snapshot.png) | ![Manual Annotation](imgs/wsi_annotation_snapshot.png)
-
-<br>
-
-![Annotation mask](imgs/wsi_annotation_mask.png)
+![](imgs/foreground_mask_mag1.0.png)
 
 <br>
 
@@ -75,7 +75,7 @@ python merge_foreground_and_annotations.py \
 This tool creates in the output folder a CSV master index and 1 sub-folder named `wsi_merged_foreground_and_annotations/`, 
 containing the merged masks. 
 
-![Merged annotation and foreground mask](imgs/merged_foreground_mask_mag1.0.png)
+![](imgs/merged_foreground_mask_mag1.0.png)
 
 <br>
 
@@ -90,7 +90,7 @@ python raster_mask.py \
 This tool creates in the output folder a CSV master index and 1 sub-folder named `wsi_overlays/`, 
 containing the rasterized masks. 
 
-![Target area split in rectangles to split up the tile generation](imgs/rasterized_mask_mag1.0.png)
+![](imgs/rasterized_mask_mag1.0.png)
 
 <br>
 
@@ -126,7 +126,7 @@ python draw_thumbnail_tiles.py \
     -mag-draw < select the magnification at which to extract the thumbnail for drawing >
 ```
 
-![Input WSI](imgs/annotation_screenshot.png) | ![WSI overlaid with (some) extracted tiles](imgs/thumbnail_with_tiles.png)
+![](imgs/wsi_snapshot.png) ![](imgs/thumbnail_with_tiles.png)
 
 <br>
 
